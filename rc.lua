@@ -75,7 +75,7 @@ local themes = {
 local chosen_theme = themes[7]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
-local terminal     = "xfce4-terminal"
+local terminal     = "sakura"
 local editor       = os.getenv("EDITOR") or "vim"
 local browser      = "google-chrome-stable"
 local guieditor    = "atom"
@@ -85,10 +85,10 @@ awful.util.terminal = terminal
 awful.util.tagnames = { '一', '二', '三', '四', '五' }
 awful.layout.layouts = {
     awful.layout.suit.floating,
-    awful.layout.suit.tile.bottom,
     awful.layout.suit.tile,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.tile.left,
+    awful.layout.suit.tile.bottom,
+    --awful.layout.suit.tile.left,
+    --awful.layout.suit.tile.top,
     --awful.layout.suit.fair,
     --awful.layout.suit.fair.horizontal,
     --awful.layout.suit.spiral,
