@@ -15,12 +15,12 @@ local os    = { getenv = os.getenv }
 
 math.random();math.random();math.random()
 
-local count = 2
+local count = 6
 local switch = string.format("%02d",math.random(1,count))
 
 local theme                                     = {}
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-dark"
-theme.wallpaper                                 = theme.dir .. "/wallpaper/" .. switch .. ".png"
+theme.wallpaper                                 = os.getenv("HOME") .. "/Imágenes/wallpapers/" .. switch .. ".png"
 theme.font                                      = "Roboto Regular 7"
 theme.fg_normal                                 = "#E6F2FD"
 theme.fg_focus                                  = "#6FB5EA"
