@@ -15,7 +15,7 @@ local os    = { getenv = os.getenv }
 
 math.random();math.random();math.random()
 
-local count = 6
+local count = 11
 local switch = string.format("%02d",math.random(1,count))
 
 local theme                                     = {}
